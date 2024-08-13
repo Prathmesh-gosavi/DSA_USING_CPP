@@ -22,9 +22,9 @@ public:
 
 	void sorting(int a[],int n)
 	{
-		for(i=0;i<n-1;i++)
+		for(i=n-1;i>0;--i)
 		{
-			for(j=0;j<n-i-1;j++)
+			for(j=0;j<i;j++)
 			{
 				if(a[j]>a[j+1])
 				{
@@ -53,11 +53,12 @@ public:
 int main()
 {
 
-	int a[50];
 	int n;
 
 	std::cout<<"how many element";
 	std::cin >>n ;
+
+	int a[n];
 
 	std::cout<<std::endl;
 
